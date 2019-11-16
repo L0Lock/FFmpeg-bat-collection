@@ -1,7 +1,5 @@
 # ffmpeg Bat Collection
 
-[![GitHub license](https://img.shields.io/github/license/L0Lock/ffmpeg-bat-collection)](https://github.com/L0Lock/ffmpeg-bat-collection/blob/master/LICENSE.sql)
-
 A collection of .bat files for some usefull ffmpeg conversions.
 
 Bat files are supported in windows only.
@@ -27,26 +25,25 @@ Bat files work on their own, but you need to have the latest versions of ffmpeg 
     set ffplay=C:\ffmpeg\bin
     ```
   
-  
   **Through user interface:**
+
+- do the following:
   
-  - do the following:
-    
-    ```
-    My Computer
-    Environment variables
-    Add
-    Name: ffmpeg
-    Value: C:\ffmpeg\bin
-    Add
-    Name: ffprobe
-    Value: C:\ffmpeg\bin
-    Add
-    Name: ffplay
-    Value: C:\ffmpeg\bin
-    Ok
-    Ok
-    ```
+  ```
+  My Computer
+  Environment variables
+  Add
+  Name: ffmpeg
+  Value: C:\ffmpeg\bin
+  Add
+  Name: ffprobe
+  Value: C:\ffmpeg\bin
+  Add
+  Name: ffplay
+  Value: C:\ffmpeg\bin
+  Ok
+  Ok
+  ```
 
 ## How to use
 

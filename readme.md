@@ -51,31 +51,31 @@ Each "dragNdrop" .bat file is simple to use : you drag an drop your input file o
 
 ## Descriptions
 
-###### dragNdrop GIF 1fps
+##### dragNdrop GIF 1fps
 
 Creates an animated GIF file playing one frame per second, from any video file.
 
-###### dragNdrop GIF 30fps
+##### dragNdrop GIF 30fps
 
 Creates an animated GIF file playing 30 frames per second, from any video file.
 
-###### dragNdrop GIF 30fps w320px
+##### dragNdrop GIF 30fps w320px
 
 Creates an animated GIF file playing 30 frames per second, resized at 320 pixels wide (with the same ratio), from any video file.
 
-###### dragNdrop MP4
+##### dragNdrop MP4
 
 Creates a standard MP4 file with fast h264 encoding. Good e.g. for quick previews of large files.
 
-###### dragNdrop MP4 web-friendly dividable size
+##### dragNdrop MP4 web-friendly dividable size
 
 Creates a MP4 file made to be readable in most web services. While also making sure the size is dividable by 2 (otherwise some video files might not be readable in the Internet).
 
-###### dragNdrop Discord
+##### dragNdrop Discord
 
 Creates a video file readable by discord and within the 8MB file size limit. Note that it adapts the encoding quality depending of the video duration. The longer the video, the uglier it gets. Dont try to send your movies with that :wink: .
 
-**Instagramized**
+##### Instagramized
 
 Made for Instagram squares in mind, but can be used for anything. It does several things:
 

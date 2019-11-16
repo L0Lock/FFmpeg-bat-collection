@@ -1,6 +1,7 @@
 echo off
 :again
 
+:: To change the resolution, change the SquareSize value above (just after the =). Default is 600.
 set SquareSize=600
 
 ffmpeg.exe -i "%~1" ^

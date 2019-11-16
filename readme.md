@@ -89,6 +89,6 @@ Made for Instagram squares in mind, but can be used for anything. It does severa
 
 You can change the output resolution if you want. Just open the bat file in a text editor, and edit the `SquareSize` value at line 5. The default value is 600 (pixels), you can use any integrer value you want. Just note that the higher you set, the longer it will take (because there's more data to process, blur increase time exponentially according to resolution) and Instagram doesn't displays more than ~600 pixels a square anyway.
 
-Example output:
+Example:
 
-<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/hWGPZlVBwNPEKkXywq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/duck-duckling-hWGPZlVBwNPEKkXywq">via GIPHY</a></p>
+![example Instagram video](https://media.giphy.com/media/WryeoK4u8eNbK0MfHD/giphy.gif)

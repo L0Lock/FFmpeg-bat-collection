@@ -74,3 +74,21 @@ Creates a MP4 file made to be readable in most web services. While also making s
 ###### dragNdrop Discord
 
 Creates a video file readable by discord and within the 8MB file size limit. Note that it adapts the encoding quality depending of the video duration. The longer the video, the uglier it gets. Dont try to send your movies with that :wink: .
+
+**Instagramized**
+
+Made for Instagram squares in mind, but can be used for anything. It does several things:
+
+- ensure maximum compatibility for displaying videos on mobile devices  (including old ones) ;
+
+- ensures compatibility for Instagram ;
+
+- Resizes the video to fit it in a square while keeping the original aspect ratio ;
+
+- Fills the gaps left by the original video's ration by a blurred background effect.
+
+You can change the output resolution if you want. Just open the bat file in a text editor, and edit the `SquareSize` value at line 5. The default value is 600 (pixels), you can use any integrer value you want. Just note that the higher you set, the longer it will take (because there's more data to process, blur increase time exponentially according to resolution) and Instagram doesn't displays more than ~600 pixels a square anyway.
+
+Example output:
+
+<div style="width:100%;height:0;padding-bottom:100%;position:relative;"><iframe src="https://giphy.com/embed/hWGPZlVBwNPEKkXywq" width="100%" height="100%" style="position:absolute" frameBorder="0" class="giphy-embed" allowFullScreen></iframe></div><p><a href="https://giphy.com/gifs/duck-duckling-hWGPZlVBwNPEKkXywq">via GIPHY</a></p>

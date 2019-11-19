@@ -35,6 +35,37 @@
         <a href="https://ffmpeg.org/" class="btn">FFmpeg Homepage</a>
         <a href="https://loic.dautry.fr" class="btn">Author's Homepage</a>
       {% endif %}
+      <script type="text/javascript">
+        var ToC =
+          "<nav role='navigation' class='table-of-contents'>" +
+            "<h2>Jump to file description:</h2>" +
+            "<ul>";
+
+        var newLine, el, title, link;
+
+        $("main h4").each(function() {
+
+          el = $(this);
+          title = el.text();
+          link = "#" + el.attr("id");
+
+          newLine =
+            "<li>" +
+              "<a href='" + link + "'>" +
+                title +
+              "</a>" +
+            "</li>";
+
+          ToC += newLine;
+
+        });
+
+        ToC +=
+           "</ul>" +
+          "</nav>";
+
+        $(".all-questions").prepend(ToC);
+      </script>
     </header>
 
     <main id="content" class="main-content" role="main">

@@ -1,7 +1,7 @@
 theme: jekyll-theme-cayman
 title: FFmpeg BAT Collection by -L0Lock-
 description: A collection of .bat script files for some usefull ffmpeg conversions and automations. For Windows only.
-
+show_downloads: true
 
 # List of links in the navigation bar
 navbar-links:

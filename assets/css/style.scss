@@ -18,4 +18,10 @@
 .btn {
 	box-shadow: 0 0 30px #159957;
 	background-color: rgba(0, 0, 0, 0.5);
+	color: rgb(255, 255, 255);
+}
+
+.btn:hover {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(66, 66, 66, 0.6);
 }

@@ -4,5 +4,9 @@
 @import 'jekyll-theme-cayman';
 
 .page-header {
-	background-image: url('/assets/img/banner.jpg')
+	background-image: url('https://l0lock.github.io/FFmpeg-bat-collection/assets/img/banner.jpg') center center cover no-repeat, url('https://l0lock.github.io/FFmpeg-bat-collection/assets/img/tile.jpg') left top repeat;
+	background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+
 }

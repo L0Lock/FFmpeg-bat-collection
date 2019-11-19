@@ -28,16 +28,19 @@
 }
 
 .table-of-contents {
-  float: right;
-  width: 40%;
-  background: #eee;
-  font-size: 0.8em;
-  padding: 1em 2em;
-  margin: 0 0 0.5em 0.5em;
-  position: -webkit-sticky;
-  position: sticky;
-  display: block;
-  z-index: 2;
+    background-color: rgba(21, 153, 87, 0.1);
+    width: 30em;
+    font-size: 0.8em;
+    padding: 1em 2em;
+    left: 0;
+    position: fixed;
+    display: block;
+    z-index: 2;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-left: none;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
 }
 
 main h4 a:target {

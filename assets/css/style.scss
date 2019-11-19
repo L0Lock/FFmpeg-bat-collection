@@ -9,6 +9,7 @@
     background-repeat: no-repeat, repeat;
     background-position: center top, left top;
 
+
 }
 
 .project-name, .project-tagline {
@@ -24,4 +25,26 @@
 .btn:hover {
     color: rgba(255, 255, 255, 0.8);
     background-color: rgba(66, 66, 66, 0.6);
+}
+
+.table-of-contents {
+  float: right;
+  width: 40%;
+  background: #eee;
+  font-size: 0.8em;
+  padding: 1em 2em;
+  margin: 0 0 0.5em 0.5em;
+  position: -webkit-sticky;
+  position: sticky;
+  display: block;
+  z-index: 2;
+}
+
+main h4 a:target {
+	animation: highlight 1s ease;
+}
+
+@keyframes highlight {
+	from { color: #990000; font-weight: bold; }
+	to { color: #159957; font-weight: normal; }
 }

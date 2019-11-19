@@ -53,7 +53,7 @@ Each "dragNdrop" .bat file is simple to use : you drag an drop your input file o
 
 ## Descriptions
 
-<span class="file-descriptions"/>
+<div class="file-descriptions">
 
 #### [dragNdrop GIF 1fps](dragNdrop_GIF_1fps.bat)
 
@@ -96,3 +96,5 @@ You can change the output resolution if you want. Just open the bat file in a te
 Example:
 
 ![example Instagram video](https://media.giphy.com/media/WryeoK4u8eNbK0MfHD/giphy.gif)
+
+</div>

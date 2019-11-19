@@ -1,8 +1,6 @@
 # ffmpeg Bat Collection
 
-<div class="badges-container">
 [![GitHub license](https://img.shields.io/github/license/L0Lock/ffmpeg-bat-collection)](https://github.com/L0Lock/FFmpeg-bat-collection/blob/master/LICENSE.sql)  [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H818FHX)
-</div>
 
 A collection of .bat files for some usefull ffmpeg conversions.
 

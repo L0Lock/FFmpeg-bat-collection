@@ -1,5 +1,7 @@
 # ffmpeg Bat Collection
 
+[![GitHub license](https://img.shields.io/github/license/L0Lock/ffmpeg-bat-collection)](https://github.com/L0Lock/FFmpeg-bat-collection/blob/master/LICENSE.sql)
+
 A collection of .bat files for some usefull ffmpeg conversions.
 
 Bat files are supported in windows only.

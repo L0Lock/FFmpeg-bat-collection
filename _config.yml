@@ -1,1 +1,18 @@
 theme: jekyll-theme-cayman
+title: FFmpeg BAT Collection by -L0Lock-
+description: A collection of .bat script files for some usefull ffmpeg conversions and automations. For Windows only.
+
+
+# List of links in the navigation bar
+navbar-links:
+  View on GitHub: "https://github.com/L0Lock/FFmpeg-bat-collection"
+  Resources:
+    - FFmpeg Homepage: "https://ffmpeg.org/"
+    - FFmpeg Documentation: "https://ffmpeg.org/ffmpeg.html"
+    - FFmpeg Wiki: "https://trac.ffmpeg.org/"
+    - FFmpeg Download: "https://ffmpeg.zeranoe.com/builds/"
+  Author's Homepage: "https://loic.dautry.fr"
+
+# Image to show in the navigation bar - image must be a square (width = height)
+# Remove this parameter if you don't want an image in the navbar
+# avatar: "/img/avatar-icon.png"

@@ -46,14 +46,24 @@
     border-bottom-right-radius: 0px;
 }
 
-main h4 a:target {
-	animation: highlight 1s ease;
+main h4 a {
+    color: #159957; font-weight: normal;
 }
 
-@keyframes highlight {
+main h4 a:target {
+	/*animation: highlight 1s ease;*/
+    color: #990000; font-weight: bold;
+    -webkit-animation:target .5s linear;
+    /*-webkit-animation-name:target;
+    -webkit-animation-duration:.5s;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-direction:linear;*/
+}
+
+/*@keyframes highlight {
 	from { color: #990000; font-weight: bold; }
 	to { color: #159957; font-weight: normal; }
-}
+}*/
 
 .badges-container {
 	text-align: center;

@@ -56,9 +56,17 @@ Each "dragNdrop" .bat file is simple to use : you drag an drop your input file o
 <div markdown="1" class="file-descriptions">
 
 
+#### [dragNdrop Android](dragNdrop_Android.bat)
+
+Creates an video file suited for playback on Android devices.
+
 #### [dragNdrop GIF 1fps](dragNdrop_GIF_1fps.bat)
 
 Creates an animated GIF file playing one frame per second, from any video file.
+
+#### [dragNdrop GIF 30fps](dragNdrop_GIF_24fps.bat)
+
+Creates an animated GIF file playing 24 frames per second, from any video file.
 
 #### [dragNdrop GIF 30fps](dragNdrop_GIF_30fps.bat)
 

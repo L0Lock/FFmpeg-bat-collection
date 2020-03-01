@@ -55,7 +55,7 @@ Each "dragNdrop" .bat file is simple to use : you drag an drop your input file o
 
 <div markdown="1" class="file-descriptions">
 
-#### #### [dragNdrop AV1](dragNdrop_AV1.bat)
+#### [dragNdrop AV1](dragNdrop_AV1.bat)
 
 Creates a MKV file encoded with [AOMedia Video 1 (AV1)](https://www.wikiwand.com/en/AV1) codec, supposed to save 30% bitrate compared to VP9 and HEVC at the same visual quality (and 50% compared to AVC/x264). As of today, the encoder is **extremely slow** and **experimental **(encodes at ~0,01% of original video speed on my tests). Use at your own risk.
 

@@ -26,7 +26,7 @@ $(document).ready(function() {
 
   ToC +=
      "</ul>" +
-    "</nav>"
+    "</nav>" +
     "<a href='javascript:void(0);' class='icon' onclick='myfunction()'>&#9776;</a>";
 
   $(".file-descriptions").prepend(ToC);

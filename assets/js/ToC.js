@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var ToC =
-    "<nav role='navigation' id='table-of-contents'>" +
+    "<nav role='navigation' class='table-of-contents'>" +
       "<h2>Jump to file description:</h2>" +
       "<ul>";
 

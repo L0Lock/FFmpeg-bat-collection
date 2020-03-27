@@ -49,49 +49,42 @@ Bat files work on their own, but you need to have the latest versions of ffmpeg 
 
 ## How to use
 
-Each "dragNdrop" .bat file is simple to use : you drag an drop your input file on it, and it will process this file and output it in the same folder of the .bat file.
+Each .bat file is made to be the simplest to use : 
+
+- drag an drop your input file on the .bat file;
+- a command prompt window opens during the process;
+- once finished, the window disapears;
+- the new files are located aside the originals.
 
 ## Descriptions
 
 <div markdown="1" class="file-descriptions">
 
-#### [dragNdrop AV1](dragNdrop_AV1.bat)
-
-Creates a MKV file encoded with [AOMedia Video 1 (AV1)](https://www.wikiwand.com/en/AV1) codec, supposed to save 30% bitrate compared to VP9 and HEVC at the same visual quality (and 50% compared to AVC/x264). As of today, the encoder is **extremely slow** and **experimental **(encodes at ~0,01% of original video speed on my tests). Use at your own risk.
-
-#### [dragNdrop Android](dragNdrop_Android.bat)
+#### [Video TO Android](Video_TO_Android.bat)
 
 Creates an video file suited for playback on Android devices.
 
-#### [dragNdrop GIF 1fps](dragNdrop_GIF_1fps.bat)
+#### [Video TO AV1](Video_TO_AV1.bat)
+
+Creates a MKV file encoded with [AOMedia Video 1 (AV1)](https://www.wikiwand.com/en/AV1) codec, supposed to save 30% bitrate compared to VP9 and HEVC at the same visual quality (and 50% compared to AVC/x264). As of today, the encoder is **extremely slow** and **experimental **(encodes at ~0,01% of original video speed on my tests). Use at your own risk.
+
+#### [Video TO GIF 1fps](Video_TO_GIF_1fps.bat)
 
 Creates an animated GIF file playing one frame per second, from any video file.
 
-#### [dragNdrop GIF 30fps](dragNdrop_GIF_24fps.bat)
+#### [Video TO GIF 30fps](Video_TO_GIF_24fps.bat)
 
 Creates an animated GIF file playing 24 frames per second, from any video file.
 
-#### [dragNdrop GIF 30fps](dragNdrop_GIF_30fps.bat)
+#### [Video TO GIF 30fps](Video_TO_GIF_30fps.bat)
 
 Creates an animated GIF file playing 30 frames per second, from any video file.
 
-#### [dragNdrop GIF 30fps w320px](dragNdrop_GIF_30fps_w320px.bat)
+#### [Video TO GIF 30fps w320px](Video_TO_GIF_30fps_w320px.bat)
 
 Creates an animated GIF file playing 30 frames per second, resized at 320 pixels wide (with the same ratio), from any video file.
 
-#### [dragNdrop MP4](dragNdrop_MP4.bat)
-
-Creates a standard MP4 file with fast h264 encoding. Good e.g. for quick previews of large files.
-
-#### [dragNdrop MP4 web-friendly dividable size](dragNdrop_MP4_webfriendly_dividablesize.bat)
-
-Creates a MP4 file made to be readable in most web services. While also making sure the size is dividable by 2 (otherwise some video files might not be readable in the Internet).
-
-#### [dragNdrop Discord](dragNdrop_Discord.cmd)
-
-Creates a video file readable by discord and within the 8MB file size limit. Note that it adapts the encoding quality depending of the video duration. The longer the video, the uglier it gets. Dont try to send your movies with that :wink: .
-
-#### [Instagramized](Instagramized.bat)
+#### [Video TO Instagramized](Instagramized.bat)
 
 Made for Instagram squares in mind, but can be used for anything. It does several things:
 
@@ -108,5 +101,21 @@ You can change the output resolution if you want. Just open the bat file in a te
 Example:
 
 ![example Instagram video](https://media.giphy.com/media/WryeoK4u8eNbK0MfHD/giphy.gif)
+
+#### [Video TO MKV HEVC HQ](Video_TO_MP4.bat)
+
+Creates a high quality HEVC file contained in MKV. That's what I use for file storage with quality.
+
+#### [Video TO MP4](Video_TO_MP4.bat)
+
+Creates a standard MP4 file with fast h264 encoding. Good e.g. for quick previews of large files.
+
+#### [Video TO MP4 web-friendly dividable size](Video_TO_MP4_webfriendly_dividablesize.bat)
+
+Creates a MP4 file made to be readable in most web services. While also making sure the size is dividable by 2 (otherwise some video files might not be readable in the Internet).
+
+#### [Video TO Discord](Video_TO_Discord.cmd)
+
+Creates a video file readable by discord and within the 8MB file size limit. Note that it adapts the encoding quality depending of the video duration. The longer the video, the uglier it gets. Dont try to send your movies with that :wink: .
 
 </div>

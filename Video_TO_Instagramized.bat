@@ -11,6 +11,7 @@ ffmpeg.exe -i "%~1" ^
     "%~p1%~n1_Instagramized.mp4" -y
 
 if NOT ["%errorlevel%"]==["0"] pause
+
 shift
 if "%~1" == "" goto:eof
 goto:again

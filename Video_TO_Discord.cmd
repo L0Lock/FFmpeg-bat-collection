@@ -1,6 +1,8 @@
 @echo off
+:again
+
 cd /D %~p0
-SET output=%~n1_8MB.mp4
+SET output=%~p1%~n1_Discorded.mp4
 set cmd="ffprobe -v error -show_entries format=duration -of default=noprint_wrappers=1:nokey=1 %1 "
 FOR /F "tokens=*" %%i IN (' %cmd% ') DO SET seconds=%%i
 echo aaaa
@@ -13,3 +15,7 @@ ffmpeg -y -i %1 -c:v libx264 -b:v %videoBitrate%k -pass 1 -b:a %audioBitrate%k -
 ffmpeg -i %1 -c:v libx264 -b:v %videoBitrate%k -pass 2 -b:a %audioBitrate%k "%output%"
 del /q ffmpeg2pass-*.log ffmpeg2pass-*.mbtree
 if NOT ["%errorlevel%"]==["0"] pause
+
+shift
+if "%~1" == "" goto:eof
+goto:again

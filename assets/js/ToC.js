@@ -1,6 +1,5 @@
 $(document).ready(function() {
   var ToC =
-    "<a href"#" class='active'>" +
     "<nav role='navigation' id='table-of-contents'>" +
       "<h2>Jump to file description:</h2>" +
       "<ul>";
@@ -26,19 +25,8 @@ $(document).ready(function() {
 
   ToC +=
      "</ul>" +
-    "</nav>" +
-    "<a href='javascript:void(0);' class='icon' onclick='myfunction()'>&#9776;</a>";
+    "</nav>";
 
   $(".file-descriptions").prepend(ToC);
 
 });
-
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("table-of-contents");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-} 

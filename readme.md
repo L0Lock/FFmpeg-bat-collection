@@ -106,6 +106,14 @@ To use the .bat files:
 
 <div markdown="1" class="file-descriptions">
 
+#### [Image Sequence TO MP4](ImgSeq_TO_mp4.bat)
+
+Converts a JPG image sequence into a MP4 video. The output video is 24 frames per second encoded with an AVC/H264 standard medium quality.
+
+#### [Image Sequence EXR TO MP4](ImgSeqEXR_TO_mp4.bat)
+
+Converts an EXR image sequence into a MP4 video, with settings specific to EXR files that are not suited for usual JPGs or PNGs. The output video is 24 frames per second encoded with an AVC/H264 standard medium quality.
+
 #### [Video TO Android](Video_TO_Android.bat)
 
 Creates an video file suited for playback on Android devices.

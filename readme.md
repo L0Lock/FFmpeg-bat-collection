@@ -49,12 +49,58 @@ Bat files work on their own, but you need to have the latest versions of ffmpeg 
 
 ## How to use
 
-Each .bat file is made to be the simplest to use : 
+### Video to X conversion
 
-- drag an drop your input file on the .bat file;
-- a command prompt window opens during the process;
-- once finished, the window disapears;
-- the new files are located aside the originals.
+Use only the files named as "*Video_TO_xxx.bat*".
+
+These files are made to be the simplest to use : 
+
+1. drag an drop your input file on the .bat file;
+2. a command prompt window opens during the process;
+3. once finished, the window disapears;
+4. the new files are located aside the originals.
+
+### Images sequence to X conversion
+
+Use the files named as "*ImgSeq_To_xxx.bat*".
+
+As it is more complex to manage images sequences, you need to:
+
+Image sequence have some variable settings:
+
+- framerate (default used: 24)
+
+- start frame (default used: 1)
+
+- name pattern (default used: "frame_xxx.jpg")
+
+If your need a different frame rate or start frame, feel free to edit the .bat file.
+
+As for the name pattern, the easiest is to have your image files created with the same name pattern. You can also edit the .bat file.
+
+To edit the name pattern, edit the value between quote marks. As for the numbering, here's how it works:
+
+- write`%%` where the numbers should start
+
+- if your counting is zero-padded (like `01` `02` `03`...), add a `0`
+
+- indicate the number of digits
+
+- end with a `d`
+
+To use the .bat files:
+
+1. Copy the desired *.bat* file in the images' folder
+
+2. Make sure the .bat settings fit your needs, edit the script or your files names if needed
+
+3. Double-click the .bat file
+
+4. A command prompt window opens during the process;
+
+5. Once finished, the window disapears;
+
+6. The new file is located aside the pictures.
 
 ## Descriptions
 

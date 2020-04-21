@@ -78,15 +78,18 @@ If your need a different frame rate or start frame, feel free to edit the .bat f
 
 As for the name pattern, the easiest is to have your image files created with the same name pattern. You can also edit the .bat file.
 
-To edit the name pattern, edit the value between quote marks. As for the numbering, here's how it works:
+To edit the name pattern, edit the value between quote marks. As for the frames numbering, here's how it works:  
+There's always a code like this one somewhere in the name pattern: `%%03d`. This is used to indicate the script that each file has a number that goes up for each file name. The way you write the code will indicate how he is compsed, and you can put the code anywhare in the name :
 
-- write`%%` where the numbers should start
+- `%%` indicates where the numbers should start
 
-- if your counting is zero-padded (like `01` `02` `03`...), add a `0`
+- if the counting is zero-padded (like `01` `02` `03`...), write a `0`
 
 - indicate the number of digits
 
 - end with a `d`
+
+At the end of the filenane is always writen the file extension. It can be anything you need, like .jpg, .png, etc. Be aware that some formats like EXR need some special treatment, hence the dedicated .bat files for them.
 
 To use the .bat files:
 

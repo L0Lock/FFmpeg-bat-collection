@@ -133,13 +133,21 @@ Creates an animated GIF file playing one frame per second, from any video file.
 
 Creates an animated GIF file playing 24 frames per second, from any video file.
 
-#### [Video TO GIF 30fps](Video_TO_GIF_30fps.bat)
-
-Creates an animated GIF file playing 30 frames per second, from any video file.
-
 #### [Video TO GIF 30fps w320px](Video_TO_GIF_30fps_w320px.bat)
 
 Creates an animated GIF file playing 30 frames per second, resized at 320 pixels wide (with the same ratio), from any video file.
+
+#### [Video TO Image Sequence PNG](Video_TO_ImgSeq_PNG.bat)
+
+Turns your video into a standard PNG image sequence. The files will be stored in a folder aside your original video file, with the same name, as the following:  
+
+```
+| original_video.mp4
+| original_video_name/
+| | frame_xxxx.png
+```
+
+Frame counting is zero-paded and uses four digits.
 
 #### [Video TO Instagramized](Instagramized.bat)
 

@@ -3,14 +3,14 @@ echo off
 
 ffmpeg.exe -i "%~1" ^
 	-c:v libx265 ^
-	-preset medium ^
-	-tune zerolatency ^
-	-crf 20 ^
-	-profile:v main10 ^
+	-preset fast ^
+	-tune fastdecode ^
+	-crf 23 ^
+	-profile:v main ^
 	-pix_fmt yuv420p ^
 	-c:a aac ^
-	-q:a 5 ^
-	"%~p1%~n1_MKV_HEVC_HQ.mkv"
+	-q:a 4 ^
+	"%~p1%~n1_MP4_HEVC_MQ.mp4"
 if NOT ["%errorlevel%"]==["0"] goto:error
 
 shift

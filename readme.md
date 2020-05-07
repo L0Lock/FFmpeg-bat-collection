@@ -125,15 +125,11 @@ Creates an video file suited for playback on Android devices.
 
 Creates a MKV file encoded with [AOMedia Video 1 (AV1)](https://www.wikiwand.com/en/AV1) codec, supposed to save 30% bitrate compared to VP9 and HEVC at the same visual quality (and 50% compared to AVC/x264). As of today, the encoder is **extremely slow** and **experimental **(encodes at ~0,01% of original video speed on my tests). Use at your own risk.
 
-#### [Video TO GIF 1fps](Video_TO_GIF_1fps.bat)
-
-Creates an animated GIF file playing one frame per second, from any video file.
-
 #### [Video TO GIF 30fps](Video_TO_GIF_24fps.bat)
 
 Creates an animated GIF file playing 24 frames per second, from any video file.
 
-#### [Video TO GIF 30fps w320px](Video_TO_GIF_30fps_w320px.bat)
+#### [Video TO GIF 24fps w320px](Video_TO_GIF_24fps_w320px.bat)
 
 Creates an animated GIF file playing 30 frames per second, resized at 320 pixels wide (with the same ratio), from any video file.
 

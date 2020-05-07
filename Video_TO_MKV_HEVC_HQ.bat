@@ -1,10 +1,11 @@
-echo off
+@echo off
 :again
 
-ffmpeg.exe -i "%~1" ^
+ffmpeg ^
+	-i "%~1" ^
 	-c:v libx265 ^
 	-preset medium ^
-	-tune zerolatency ^
+	-tune grain ^
 	-crf 20 ^
 	-profile:v main10 ^
 	-pix_fmt yuv420p ^
@@ -12,6 +13,7 @@ ffmpeg.exe -i "%~1" ^
 	-q:a 5 ^
 	"%~p1%~n1_MKV_HEVC_HQ.mkv"
 if NOT ["%errorlevel%"]==["0"] goto:error
+echo [92m%~n1 Done![0m
 
 shift
 if "%~1" == "" goto:end

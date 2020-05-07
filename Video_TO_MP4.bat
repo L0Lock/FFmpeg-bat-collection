@@ -1,8 +1,14 @@
-echo off
+@echo off
 :again
 
-ffmpeg.exe -i "%~1" -c:v libx264 -preset faster -tune fastdecode "%~p1%~n1_mp4.mp4"
+ffmpeg ^
+	-i "%~1" ^
+	-c:v libx264 ^
+	-preset faster ^
+	-tune fastdecode ^
+	"%~p1%~n1_mp4.mp4"
 if NOT ["%errorlevel%"]==["0"] goto:error
+echo [92m%~n1 Done![0m
 
 shift
 if "%~1" == "" goto:end

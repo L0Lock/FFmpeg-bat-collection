@@ -1,8 +1,13 @@
-echo off
+@echo off
 :again
-
-ffmpeg.exe -i "%~1" -c:v libaom-av1 -crf 21 -strict experimental "%~p1%~n1_AV1.mkv"
+ffmpeg ^
+	-i "%~1" ^
+	-c:v libaom-av1 ^
+	-crf 21 ^
+	-strict experimental ^
+	"%~p1%~n1_AV1.mkv"
 if NOT ["%errorlevel%"]==["0"] goto:error
+echo [92m%~n1 Done![0m
 
 shift
 if "%~1" == "" goto:end

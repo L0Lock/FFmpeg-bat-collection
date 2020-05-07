@@ -1,3 +1,4 @@
+@echo off
 ffmpeg ^
 	-framerate 24 ^
 	-start_number 1 ^
@@ -6,6 +7,7 @@ ffmpeg ^
 	-preset faster -tune fastdecode ^
 	"%~p1%~n1ImgSeq_MP4.mp4"
 if NOT ["%errorlevel%"]==["0"] goto:error
+echo [92m%~n1 Done![0m
 
 shift
 if "%~1" == "" goto:end
@@ -20,4 +22,5 @@ exit 0
 :end
 
 echo [92mEncoding succesful. This window will close after 10 seconds.[0m
+pause
 timeout /t 10

@@ -11,10 +11,21 @@ SET /A "totalBitrate=64000/seconds"
 SET overheadBitrate=100
 SET audioBitrate=96
 SET /A "videoBitrate=totalBitrate-audioBitrate-overheadBitrate"
-ffmpeg -y -i %1 -c:v libx264 -b:v %videoBitrate%k -pass 1 -b:a %audioBitrate%k -f mp4 NUL && \
-ffmpeg -i %1 -c:v libx264 -b:v %videoBitrate%k -pass 2 -b:a %audioBitrate%k "%output%"
+ffmpeg ^
+	-i %1 ^
+	-c:v libx264 ^
+	-b:v %videoBitrate%k ^
+	-pass 1 -b:a %audioBitrate%k ^
+	-f mp4 NUL && \
+ffmpeg ^
+	-i %1 ^
+	-c:v libx264 ^
+	-b:v %videoBitrate%k ^
+	-pass 2 ^
+	-b:a %audioBitrate%k "%output%"
 del /q ffmpeg2pass-*.log ffmpeg2pass-*.mbtree
 if NOT ["%errorlevel%"]==["0"] goto:error
+echo [92m%~n1 Done![0m
 
 shift
 if "%~1" == "" goto:end

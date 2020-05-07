@@ -1,7 +1,8 @@
-echo off
+@echo off
 :again
 
-ffmpeg.exe -i "%~1" ^
+ffmpeg ^
+	-i "%~1" ^
 	-c:v libx265 ^
 	-preset fast ^
 	-tune fastdecode ^
@@ -12,6 +13,7 @@ ffmpeg.exe -i "%~1" ^
 	-q:a 4 ^
 	"%~p1%~n1_MP4_HEVC_MQ.mp4"
 if NOT ["%errorlevel%"]==["0"] goto:error
+echo [92m%~n1 Done![0m
 
 shift
 if "%~1" == "" goto:end

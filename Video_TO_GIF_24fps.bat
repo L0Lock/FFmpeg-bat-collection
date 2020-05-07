@@ -31,5 +31,6 @@ exit 0
 
 :end
 
+cls
 echo [92mEncoding succesful. This window will close after 10 seconds.[0m
 timeout /t 10

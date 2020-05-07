@@ -1,17 +1,18 @@
 @echo off
 :again
 
+mkdir frames
 ffmpeg ^
-	-i "%~1" ^
-	-c:v libx265 ^
-	-preset medium ^
-	-tune grain ^
-	-crf 20 ^
-	-profile:v main10 ^
-	-pix_fmt yuv420p ^
-	-c:a aac ^
-	-q:a 5 ^
-	"%~p1%~n1_MKV_HEVC_HQ.mkv"
+	-i "%~1" -y ^
+	-filter_complex "[0:v] palettegen" "frames/palette.png"
+ffmpeg -i "%~1" "frames/ffout%%03d.png"
+ffmpeg.exe ^
+	-framerate 1 ^
+	-i "frames/ffout%%03d.png" ^
+	-i "frames/palette.png" ^
+	-filter_complex "[0:v][1:v] paletteuse" ^
+	"%~p1%~n1_gif1.gif"
+rmdir frames /s /q
 if NOT ["%errorlevel%"]==["0"] goto:error
 echo [92m%~n1 Done![0m
 
@@ -27,6 +28,5 @@ exit 0
 
 :end
 
-cls
 echo [92mEncoding succesful. This window will close after 10 seconds.[0m
 timeout /t 10

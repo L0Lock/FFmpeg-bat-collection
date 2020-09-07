@@ -117,6 +117,11 @@ Converts a JPG image sequence into a MP4 video. The output video is 24 frames pe
 
 Converts an EXR image sequence into a MP4 video, with settings specific to EXR files that are not suited for usual JPGs or PNGs. The output video is 24 frames per second encoded with an AVC/H264 standard medium quality.
 
+#### [Video ADD Cover](Video_ADD_Cover.bat)
+
+Sets a custom cover/thumbnail for a video file. To make it work, you need to have your picture file in the same folder as the video, named ad `cover.jpg`.
+Be aware: not all video containers support curstom covers. Theoretically, most MP4 and MKV files should be fine.
+
 #### [Video TO Android](Video_TO_Android.bat)
 
 Creates an video file suited for playback on Android devices.

@@ -60,6 +60,11 @@ These files are made to be the simplest to use :
 3. once finished, the window disapears;
 4. the new files are located aside the originals.
 
+### Add Cover to X
+
+Same usage as in the above numbered list. But:  
+To make it work, you need to have your picture file in the same folder as the source video, named as `cover.jpg`.
+
 ### Images sequence to X conversion
 
 Use the files named as "*ImgSeq_To_xxx.bat*".
@@ -69,9 +74,7 @@ As it is more complex to manage images sequences, you need to:
 Image sequence have some variable settings:
 
 - framerate (default used: 24)
-
 - start frame (default used: 1)
-
 - name pattern (default used: "frame_xxx.jpg")
 
 If your need a different frame rate or start frame, feel free to edit the .bat file.
@@ -109,6 +112,14 @@ To use the .bat files:
 
 <div markdown="1" class="file-descriptions">
 
+#### [ADD Cover to MKV](ADD_Cover_to_MKV.bat)
+
+Sets a custom cover/thumbnail for a MKV video file.
+
+#### [ADD Cover to MP4](ADD_Cover_to_MP4.bat)
+
+Sets a custom cover/thumbnail for a MP4 video file.
+
 #### [Image Sequence TO MP4](ImgSeq_TO_mp4.bat)
 
 Converts a JPG image sequence into a MP4 video. The output video is 24 frames per second encoded with an AVC/H264 standard medium quality.
@@ -116,11 +127,6 @@ Converts a JPG image sequence into a MP4 video. The output video is 24 frames pe
 #### [Image Sequence EXR TO MP4](ImgSeqEXR_TO_mp4.bat)
 
 Converts an EXR image sequence into a MP4 video, with settings specific to EXR files that are not suited for usual JPGs or PNGs. The output video is 24 frames per second encoded with an AVC/H264 standard medium quality.
-
-#### [Video ADD Cover](Video_ADD_Cover.bat)
-
-Sets a custom cover/thumbnail for a video file. To make it work, you need to have your picture file in the same folder as the video, named ad `cover.jpg`.
-Be aware: not all video containers support curstom covers. Theoretically, most MP4 and MKV files should be fine.
 
 #### [Video TO Android](Video_TO_Android.bat)
 

@@ -1,4 +1,4 @@
-
+@echo off
 :again
 
 cd /D %~p1
@@ -9,7 +9,6 @@ ffmpeg ^
 	-metadata:s:t mimetype=image/jpeg ^
 	-c copy ^
 	"%~p1%~n1_covered.mkv"
-	pause
 if NOT ["%errorlevel%"]==["0"] goto:error
 echo [92m%~n1 Done![0m
 

@@ -1,4 +1,4 @@
-
+@echo off
 :again
 
 cd /D %~p1
@@ -11,7 +11,6 @@ ffmpeg ^
 	-c:v:1 png ^
 	-disposition:v:1 attached_pic ^
 	"%~p1%~n1_covered.mp4"
-	pause
 if NOT ["%errorlevel%"]==["0"] goto:error
 echo [92m%~n1 Done![0m
 

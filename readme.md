@@ -49,9 +49,9 @@ Bat files work on their own, but you need to have the latest versions of ffmpeg 
 
 ## How to use
 
-### Video to X conversion
+### General usage
 
-Use only the files named as "*Video_TO_xxx.bat*".
+I.E. with files named as "*Video_TO_xxx.bat*".
 
 These files are made to be the simplest to use : 
 
@@ -62,8 +62,15 @@ These files are made to be the simplest to use :
 
 ### Add Cover to X
 
-Same usage as in the above numbered list. But:  
+Same general usage. But:  
 To make it work, you need to have your picture file in the same folder as the source video, named as `cover.jpg`.
+
+### Add Frame Number to X
+
+Same general usage.  
+Uses Windows' "Courier New" font in bold by default, with a two-digits zero padding. If you need to customize:
+- Replace the font path line 8 in `fontfile=/Windows/Fonts/courbd.ttf` (**on Windows, don't use `\` nor incllude the drive letter like `C:`)
+- Change the `2` to whatever digit number line 8 in `{eif\:n\:d\:2}`
 
 ### Images sequence to X conversion
 
@@ -119,6 +126,10 @@ Sets a custom cover/thumbnail for a MKV video file.
 #### [ADD Cover to MP4](ADD_Cover_to_MP4.bat)
 
 Sets a custom cover/thumbnail for a MP4 video file.
+
+#### [ADD Frame number to MOV](ADD_Framenumber_to_MOV.bat)
+
+Prints the frame number on the video, with a semi-transparent background and a two-digit zero-padded number.
 
 #### [Image Sequence TO MP4](ImgSeq_TO_mp4.bat)
 

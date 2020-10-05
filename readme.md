@@ -63,7 +63,17 @@ These files are made to be the simplest to use :
 ### Add Cover to X
 
 Same general usage. But:  
-To make it work, you need to have your picture file in the same folder as the source video, named as `cover.jpg`.
+To make it work, you need to have your picture file in the same folder as the source video, named as `cover.jpg`. Do check those links first:
+
+ - [Enabling cover thumbnails on your system](https://codecalamity.com/guides/video-thumbnails/)
+ - [Cover variants](https://www.matroska.org/technical/attachments.html):
+
+FileName | Image Orientation | Pixel Length of Smallest Side
+-- | -- | --
+cover.jpg | Portrait or square | 600
+small_cover.png | Portrait or square | 120
+cover_land.png | Landscape | 600
+small_cover_land.jpg | Landscape | 120
 
 ### Add Frame Number to X
 

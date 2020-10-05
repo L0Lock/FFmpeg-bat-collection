@@ -127,9 +127,17 @@ Sets a custom cover/thumbnail for a MKV video file.
 
 Sets a custom cover/thumbnail for a MP4 video file.
 
+#### [ADD Frame number to MP4](ADD_Framenumber_to_MP4.bat)
+
+Prints the frame number on a MP4 video, with a semi-transparent background and a two-digit zero-padded number.
+
 #### [ADD Frame number to MOV](ADD_Framenumber_to_MOV.bat)
 
-Prints the frame number on the video, with a semi-transparent background and a two-digit zero-padded number.
+Prints the frame number on a MOV video, with a semi-transparent background and a two-digit zero-padded number.
+
+#### [ADD Frame number to MP4](ADD_Framenumber_to_MOV.bat)
+
+Prints the frame number on a MP4 video, with a semi-transparent background and a two-digit zero-padded number.
 
 #### [Image Sequence TO MP4](ImgSeq_TO_mp4.bat)
 

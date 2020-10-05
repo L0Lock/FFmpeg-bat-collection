@@ -63,7 +63,11 @@ These files are made to be the simplest to use :
 ### Add Cover to X
 
 Same general usage. But:  
-To make it work, you need to have your picture file in the same folder as the source video, named as `cover.jpg`. Do check those links first:
+To make it work, you need to have your picture file in the same folder as the source video, named as `cover.jpg`.
+
+![demo covers](https://github.com/L0Lock/FFmpeg-bat-collection/raw/master/assets/img/covers_demo.jpg)
+
+Do check those links first:
 
  - [Enabling cover thumbnails on your system](https://codecalamity.com/guides/video-thumbnails/)
  - [Cover variants](https://www.matroska.org/technical/attachments.html):
@@ -81,6 +85,8 @@ Same general usage.
 Uses Windows' "Courier New" font in bold by default, with a two-digits zero padding. If you need to customize:
 - Replace the font path line 8 in `fontfile=/Windows/Fonts/courbd.ttf` (**on Windows, don't use `\` nor incllude the drive letter like `C:`)
 - Change the `2` to whatever digit number line 8 in `{eif\:n\:d\:2}`
+
+![demo frame number](https://github.com/L0Lock/FFmpeg-bat-collection/raw/master/assets/img/frame_number_demo.gif)
 
 ### Images sequence to X conversion
 

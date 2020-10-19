@@ -8,6 +8,7 @@ ffmpeg ^
 	-attach "cover.jpg" ^
 	-metadata:s:t mimetype=image/jpeg ^
 	-c copy ^
+	-map 0 ^
 	"%~p1%~n1_covered.mkv"
 if NOT ["%errorlevel%"]==["0"] goto:error
 echo [92m%~n1 Done![0m

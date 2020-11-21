@@ -8,6 +8,7 @@ ffmpeg ^
 	-i "cover.jpg" ^
 	-map 0 -map 1 ^
 	-c copy ^
+	-map 0 ^
 	-c:v:1 png ^
 	-disposition:v:1 attached_pic ^
 	"%~p1%~n1_covered.mp4"

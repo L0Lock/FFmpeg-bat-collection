@@ -1,15 +1,14 @@
-@echo off
+rem @echo off
 :again
 
 cd /D %~p1
 
 ffmpeg ^
 	-i "%~nx1" ^
-	-attach "cover.jpg" ^
-	-metadata:s:t mimetype=image/jpeg ^
-	-c copy ^
-	-map 0 ^
-	"%~p1%~n1_covered.mkv"
+	-vf "drawtext=fontfile=/Windows/Fonts/courbd.ttf: text='Frame \: %%{eif\:n\:d\:2}': start_number=1: x=(w-tw)/2: y=h-(2*lh): fontcolor=white: fontsize=40: box=1: boxcolor=black@0.4: boxborderw=8" ^
+	-c:a copy ^
+	"%~p1%~n1_framenumbered.mp4"
+	pause
 if NOT ["%errorlevel%"]==["0"] goto:error
 echo [92m%~n1 Done![0m
 

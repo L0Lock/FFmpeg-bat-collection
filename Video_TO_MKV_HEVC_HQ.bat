@@ -5,10 +5,11 @@ ffmpeg ^
 	-i "%~1" ^
 	-c:v libx265 ^
 	-preset medium ^
-	-tune grain ^
-	-crf 20 ^
-	-profile:v main10 ^
-	-pix_fmt yuv420p ^
+	-tune fastdecode ^
+	-crf 23 ^
+	-map 0 ^
+	-map_metadata -1 ^
+	-pix_fmt yuv420p10le ^
 	-c:a aac ^
 	-q:a 5 ^
 	"%~p1%~n1_MKV_HEVC_HQ.mkv"

@@ -2,7 +2,7 @@
 ffmpeg ^
 	-framerate 24 ^
 	-start_number 1 ^
-	-i "frames_%%03d.jpg" ^
+	-i "frame_%%03d.jpg" ^
 	-c:v libx264 -pix_fmt yuv420p -crf 23 ^
 	-preset faster -tune fastdecode ^
 	"%~p1%~n1ImgSeq_MP4.mp4"

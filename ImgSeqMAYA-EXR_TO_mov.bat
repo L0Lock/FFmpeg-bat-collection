@@ -1,16 +1,13 @@
-@echo off
-:again
-
-cd /D %~p1
-
+rem @echo off
 ffmpeg ^
-	-i "%~nx1" ^
-	-i "cover.jpg" ^
-	-map 0 -map 1 ^
-	-c copy ^
-	-c:v:1 png ^
-	-disposition:v:1 attached_pic ^
-	"%~p1%~n1_covered.mp4"
+	-framerate 24 ^
+	-start_number 1 ^
+	-i "frame_%%04d.exr" ^
+	-c:v libx264 -pix_fmt yuv420p -crf 23 ^
+	-vf "eq=gamma=2" ^
+	-preset faster ^
+	-tune fastdecode ^
+	"%~p1%~n1ImgSeqEXR.mov"
 if NOT ["%errorlevel%"]==["0"] goto:error
 echo [92m%~n1 Done![0m
 

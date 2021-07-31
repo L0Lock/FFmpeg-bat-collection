@@ -1,9 +1,9 @@
 @echo off
 ffmpeg ^
-	-apply_trc iec61966_2_1
+	-apply_trc iec61966_2_1 ^
 	-framerate 24 ^
 	-start_number 1 ^
-	-i "frames_%%03d.exr" ^
+	-i "frame_%%03d.exr" ^
 	-c:v libx264 -pix_fmt yuv420p -crf 23 ^
 	-preset faster -tune fastdecode ^
 	"%~p1%~n1ImgSeqEXR_MP4.mp4"

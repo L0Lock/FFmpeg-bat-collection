@@ -163,6 +163,10 @@ Converts a JPG image sequence into a MP4 video. The output video is 24 frames pe
 
 Converts an EXR image sequence into a MP4 video, with settings specific to EXR files that are not suited for usual JPGs or PNGs. The output video is 24 frames per second encoded with an AVC/H264 standard medium quality.
 
+#### [Video Comparison](Video_Comparison.bat)
+
+Needs two input files, sort them alphabethically and produces two videos: one side-by-side horizontally and one stacked with overlay blend mode.
+
 #### [Video TO Android](Video_TO_Android.bat)
 
 Creates an video file suited for playback on Android devices.

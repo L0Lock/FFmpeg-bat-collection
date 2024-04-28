@@ -10,42 +10,36 @@ Bat files are supported in windows only.
 
 Bat files work on their own, but you need to have the latest versions of ffmpeg installed, as well as ffprobe and ffplay (those two are packed along ffmpeg.exe)
 
-- [Download the lastest "static" ffmpeg pack](https://ffmpeg.zeranoe.com/builds/).
+- Download the [latest release](https://github.com/L0Lock/FFmpeg-bat-collection/releases/latest) and unpack it wherever you want.
+- If you don't have FFmpeg already, download the [lastest "static" ffmpeg pack](https://ffmpeg.zeranoe.com/builds/). You can either put the ffmpeg executables in the repository's `ffmpeg` folder, or register ffmpeg to your operating system (**recommended!**).
 
-- Browse in the archive up to the `bin` subfolder containing ffmpeg, ffprobe and ffplay executables. Uncompress the `bin` folder (in this example we'll use `C:\ffmpeg\bin`
+<details>
+  <summary>Click to expand: <b>How to register ffmpeg in Windows</b></summary>
+
+ - Browse in the archive up to the `bin` subfolder containing ffmpeg, ffprobe and ffplay executables. Uncompress the `bin` folder where you want. This guide will use: `C:\ffmpeg\bin`
 
 - Register ffmpeg, ffprobe & ffplay to environment variables
-  **Through command lines:**
+
+  **Through command line (fastest):**
   
-  - Hit the windows key, write down `cmd` and press <kbd>Enter</kbd>
-  
-  - enter the following command, line after line:
-    
-    ```
-    set ffmpeg=C:\ffmpeg\bin
-    set ffprobe=C:\ffmpeg\bin
-    set ffplay=C:\ffmpeg\bin
+  - Open the terminal (press <kbd>![Windows key](http://i.imgur.com/AAjIi.png)</kbd><kbd>X</kbd> and click `Terminal`)
+  - enter the following command:
+    ```bash
+    setx PATH "%PATH%;C:\ffmpeg\bin"
     ```
   
   **Through user interface:**
 
-- do the following:
-  
-  ```
-  My Computer
-  Environment variables
-  Add
-  Name: ffmpeg
-  Value: C:\ffmpeg\bin
-  Add
-  Name: ffprobe
-  Value: C:\ffmpeg\bin
-  Add
-  Name: ffplay
-  Value: C:\ffmpeg\bin
-  Ok
-  Ok
-  ```
+  - Startmenu Search: "Edit Environment Variables for your account"
+  - <kbd>Environment variables</kbd>
+  - Under "User variables for \<username\>", find and double-click "Path" 
+  - <kbd>New</kbd>
+  - Type in `C:\ffmpeg\bin` and <kbd>&#9166; Enter</kbd>
+  - <kbd>Ok</kbd>
+  - <kbd>Ok</kbd>
+  - <kbd>Ok</kbd>
+
+</details>
 
 ## How to use
 
